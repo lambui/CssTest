@@ -13,26 +13,33 @@
 </head>
 <body>
     <ul class='proj-list'>
-        <li>
-            <div class='name' >{{ i.name }}</div>
-            <div class='detail'>
-                <div>
-                    <div>
-                        <div>{{ lang.language }}</div>
-                        <div>{{ lang.comment }}</div>
-                    </div>
+        <li class='main-li'>
+            <span class='name' >Project 1</span>
+            <span class='detail'>
+                <div class='info-block'>
+                    <div class='info-title'>Languages</div>
+                    <ul>   
+                        <li>
+                            <div>{{ lang.language }}</div>
+                            <div>{{ lang.comment }}</div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div>
-                    <div>
-                        <div>{{ frame.framework }}</div>
-                        <div>{{ frame.comment }}</div>
-                    </div>
+                <div class='info-block'>
+                    <div class='info-title'>Frameworks</div>
+                    <ul>   
+                        <li>
+                            <div>{{ frame.framework }}</div>
+                            <div>{{ frame.comment }}</div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </span>
             <div class='x'>x</div>
         </li>
-        <li class='add'>+</li>
+
+        <li class='main-li add'>+</li>
     </ul>
 </body>
 </html>
